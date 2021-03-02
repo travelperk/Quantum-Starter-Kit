@@ -1,5 +1,0 @@
-btn.login_mail = {\"locator\":\"xpath=//*[@resource-id='com.travelperk:id/sign_email_btn']",\"desc\":\"Sign Email Button\"}
-btn.sign_in = {\"locator\":\"xpath=//*[@resource-id='com.travelperk:id/sign_in_btn']",\"desc\":\"Sign In Button\"}
-input.email = {\"locator\":\"xpath=(//*[@resource-id='com.travelperk:id/email'])",\"desc\":\"Input email\"}
-input.password = {\"locator\":\"xpath=(//*[@resource-id='com.travelperk:id/password'])",\"desc\":\"Input password\"}
-error.input.email = {\"locator\":\"xpath=(//*[@resource-id='com.travelperk:id/textinput_error'])",\"desc\":\"Error Input email\"}
