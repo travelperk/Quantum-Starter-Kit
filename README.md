@@ -1,7 +1,24 @@
-<img src="https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/blob/master/DOC/image/perfecto.jpg" height="75" width="300"/>
+# Travelperk E2E testing project
 
-![CircleCI status](https://circleci.com/gh/Perfecto-Quantum/Quantum-Starter-Kit.svg?style=shield "CircleCI status")
+## How to run
+````bash 
+mvn install test -DtestngXmlFile=testng_tk_login.xml
+````
 
+## How to install the APK/IPA
+By defining the test dependency with an APK or IPA through `capabilities` the test will install the necessary artifact automatically
+```xml
+<parameter name="driver.capabilities.app" value="PRIVATE:test.apk"></parameter>
+<parameter name="driver.capabilities.appPackage" value="com.travelperk"></parameter>
+<parameter name="driver.capabilities.startActivity" value="com.travelperk/com.travelperk.LaunchActivity"></parameter>
+<parameter name="appType" value="Native"></parameter>
+```
+## How to upload the APK/IPA to PerfectoMobile
+The easiest way is through a custom step on Bitrise https://github.com/PerfectoCode/Bitrise_Perfecto_FileUpload
+
+⚠️️⚠️️⚠️️ The APK must be signed for **DEBUG** or it'll fail on installation ⚠️️⚠️⚠️️ 
+
+---
 # Quantum Starter Kit
 This Quantum starter kit is designed to get you up and running using the Quantum framework (sponsored by [Perfecto](https://www.perfecto.io) and powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
 
