@@ -12,6 +12,10 @@
 
     <test name="Android Login Invalid Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.capabilities.app" value="PRIVATE:test.apk"></parameter>
+        <parameter name="driver.capabilities.appPackage" value="com.travelperk"></parameter>
+        <parameter name="driver.capabilities.startActivity" value="com.travelperk/com.travelperk.LaunchActivity"></parameter>
+        <parameter name="appType" value="Native"></parameter>
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
